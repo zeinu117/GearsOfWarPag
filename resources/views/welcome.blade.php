@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>GearsOfWar</title>
+    <title>GearsOfWarW</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +15,8 @@
             <div class="row mt-5 mb-5"></div>
             <div class="row w-100 mt-5 mb-5">
                 <div class="col-sm-12 mt-5 v-center" style=" height:50em  "  >
-                    <button class="btn btn-dark mx-auto" ><a href="gearsOfWar" class="text-white"><strong>Página de Gears Of War</strong></a></button>
+
+                    <a href="gearsOfWar" class="text-white btn btn-dark mx-auto" role="button"><strong>Página de Gears Of War</strong></a>
                 </div>
             </div>
         </div>

@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\GearsOfWarController;
+use App\Http\Controllers\InicioController;
+use App\Http\Controllers\JuegoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,49 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $vistas = view('welcome');
-    return $vistas;
-});
-Route::get('/gearsOfWar', function () {
-    $vistas = view('layout/header').
-                view('layout/menu').
-                view('gearsOfWar').
-                view('layout/footer');
-    return $vistas;
-});
-Route::get('/juego/uno', function () {
-    $vistas = view('layout/header').
-                view('layout/menu').
-                view('juego/uno').
-                view('layout/footer');
-    return $vistas;
-});
-Route::get('/juego/dos', function () {
-    $vistas = view('layout/header').
-                view('layout/menu').
-                view('juego/dos').
-                view('layout/footer');
-    return $vistas;
-});
-Route::get('/juego/tres', function () {
-    $vistas = view('layout/header').
-                view('layout/menu').
-                view('juego/tres').
-                view('layout/footer');
-    return $vistas;
-});
-Route::get('/juego/cuatro', function () {
-    $vistas = view('layout/header').
-                view('layout/menu').
-                view('juego/cuatro').
-                view('layout/footer');
-    return $vistas;
-});
-Route::get('/juego/cinco', function () {
-    $vistas = view('layout/header').
-                view('layout/menu').
-                view('juego/cinco').
-                view('layout/footer');
-    return $vistas;
-});
+Route::get('/', InicioController::class);
+Route::get('/gearsOfWar',[GearsOfWarController::class, 'GearsOfWar'] );
+Route::get('/juego/uno', [JuegoController::class, 'juego1']);
+Route::get('/juego/dos',  [JuegoController::class, 'juego2']);
+Route::get('/juego/tres',  [JuegoController::class, 'juego3']);
+Route::get('/juego/cuatro',  [JuegoController::class, 'juego4']);
+Route::get('/juego/cinco', [JuegoController::class, 'juego5']);

@@ -1,3 +1,7 @@
+@extends('layout.plantilla');
+@section('titulo', 'GearsOFWar');
+@section('contenido')
+
 <div class="container" style="background-color: black">
     <div class="row">
         <div class="col-sm-12 mt-4">
@@ -297,3 +301,4 @@
         </div>
     </div>
 </div>
+@endsection
